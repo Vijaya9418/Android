@@ -26,5 +26,6 @@
         android:layout_centerHorizontal="true"
         android:textSize="25dp"
         android:textStyle="bold"></TextView>
+    
 
 </RelativeLayout>
