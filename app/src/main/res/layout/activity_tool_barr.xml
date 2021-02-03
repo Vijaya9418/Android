@@ -19,5 +19,6 @@
         app:subtitleTextColor="@color/white">
 
     </androidx.appcompat.widget.Toolbar>
+    
 
 </LinearLayout>
