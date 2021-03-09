@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.class_practicals">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Class_practicals">
+        <activity android:name=".Dynamic_fragmentt">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FragmentMian">
+
+        </activity>
+        <activity
+            android:name=".DemoFragment2"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".DemoFragment1"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".DemoJobSchedular"></activity>
+
+        <service
+            android:name=".DemoJobToDo"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:name=".Header_and_Footter" />
+        <activity android:name=".hw2" />
+        <activity android:name=".Batteryy" />
+        <activity android:name=".hw" />
+        <activity android:name=".demo_time_picker" />
+        <activity android:name=".Date_picker_dialogg" />
+        <activity android:name=".Date_picker" />
+        <activity android:name=".Custom_toast_layout" />
+        <activity android:name=".Custom_toast" />
+
+        <receiver android:name=".MyBroadCast" />
+
+        <activity android:name=".Alarm" />
+        <activity android:name=".pending_intent" />
+        <activity android:name=".splash_screen" />
+        <activity android:name=".ScrollVieww" />
+        <activity android:name=".ToolBarr" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

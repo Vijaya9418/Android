@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <TextView
+        android:id="@+id/tvhw"
+        android:text="this is header"
+
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:background="@color/teal_700"
+        android:layout_centerHorizontal="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/footer"
+        android:text="this is footer"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/teal_700"
+        android:layout_centerHorizontal="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    </TextView>
+
+
+
+</RelativeLayout>

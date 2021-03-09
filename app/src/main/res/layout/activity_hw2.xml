@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hw2"
+    android:gravity="fill_vertical">
+
+    <include layout="@layout/activity_header_and__footter"
+        android:id="@+id/ft">
+
+    </include>
+
+
+
+<!--   <include layout="@layout/activity_tool_barr">-->
+<!--       -->
+<!--   </include>-->
+    <ListView
+        android:id="@+id/list_view"
+     android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+
+</RelativeLayout>

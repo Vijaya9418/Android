@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <RatingBar
+       android:id="@+id/ratingBar"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@color/teal_700"
+       android:rating="2"
+       android:layout_centerInParent="true"
+       android:progressTint="@android:color/white"
+       android:progressBackgroundTint="@color/black">
+
+   </RatingBar>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+       android:layout_centerHorizontal="true"
+        android:text="Click"
+        android:layout_marginTop="20dp"
+        android:background="@color/purple_200">
+
+    </Button>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/ratingBar"
+        android:layout_marginBottom="40dp"
+        >
+
+    </ProgressBar>
+
+    <Button
+        android:id="@+id/threadbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"></Button>
+
+    <ProgressBar
+        android:id="@+id/progress_horizontal"
+        android:layout_width="300dp"
+        android:visibility="invisible"
+        android:background="@color/purple_200"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/progress_circular"
+        android:layout_marginBottom="40dp"
+        android:progress="1"
+        android:max="100"
+        android:indeterminate="false"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal">
+
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/tvv1"
+        android:layout_width="30dp"
+        android:layout_above="@id/progress_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_height="30dp"
+       android:textSize="20dp"
+        android:text="1"
+        android:textColor="@color/black"></TextView>
+
+</RelativeLayout>
