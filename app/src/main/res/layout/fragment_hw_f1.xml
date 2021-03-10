@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hw_f1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <Button
+        android:id="@+id/b1"
+        android:text="Click Picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:onClick="click"></Button>
+
+    <Button
+        android:id="@+id/b2"
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@id/b1"></Button>
+
+    <TextView
+        android:id="@+id/tvvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Name"
+        android:layout_below="@id/b1"
+        android:textSize="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/black"></TextView>
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvvv"
+        android:layout_below="@id/b1"
+        android:layout_marginStart="10dp"
+        android:hint="name"
+        android:layout_marginTop="70dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/b3"
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"></Button>
+
+    </RelativeLayout>
+
+</FrameLayout>
