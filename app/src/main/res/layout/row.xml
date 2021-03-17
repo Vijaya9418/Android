@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:id="@+id/userImage"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Name"
+            android:textColor="@color/black"
+          android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="UID"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/desc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Phone Number"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pnumber"/>
+
+    </LinearLayout>
+
+</LinearLayout>
