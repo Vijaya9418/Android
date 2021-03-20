@@ -3,6 +3,7 @@ package com.example.class_practicals;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -15,7 +16,6 @@ public class new_lv extends AppCompatActivity {
     EditText ed1;
     EditText ed2;
     Button b1;
-    Custom_adapter obj;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,14 @@ public class new_lv extends AppCompatActivity {
         ed1=findViewById(R.id.ed1);
         ed2=findViewById(R.id.ed2);
         b1=findViewById(R.id.b1);
-//        obj=new Custom_adapter(this,R.layout.cust,al);
+       Customm obj=new Customm(this,R.layout.activity_new_lv,lv1);
     }
+//    public void dothis(View v)
+//    {
+//        String fn=firstname.getText().toString();
+//        firstname.setText("");
+//
+//        String ln=lastname.getText().toString();
+//        lastname.setText("");
+//    }
 }

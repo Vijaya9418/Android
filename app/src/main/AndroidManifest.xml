@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Class_practicals">
-        <activity android:name=".new_lv"></activity>
+        <activity android:name=".layout_custom"></activity>
+        <activity android:name=".new_lv" />
         <activity android:name=".Custom_adapter">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".hw_fragment" />
-        <activity android:name=".Dynamic_fragmentt"></activity>
+        <activity android:name=".Dynamic_fragmentt" />
         <activity android:name=".FragmentMian" />
         <activity
             android:name=".DemoFragment2"
