@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".validation"
+    android:background="@color/teal_200">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ok2">
+
+    <EditText
+        android:hint="Enter name"
+        android:id="@+id/edd1"
+        android:layout_toEndOf="@id/name"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/ok"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/name"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name        "></TextView>
+
+    <EditText
+        android:id="@+id/edd2"
+        android:hint="Enter password"
+        android:layout_toEndOf="@id/password1"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+       android:background="@drawable/ok"
+        android:layout_below="@id/edd1"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/password1"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"></TextView>
+
+
+    <Button
+        android:id="@+id/add1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="add"
+        android:onClick="add"
+        ></Button>
+
+    </RelativeLayout>
+
+</RelativeLayout>
