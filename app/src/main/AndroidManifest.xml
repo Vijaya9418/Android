@@ -12,15 +12,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Class_practicals">
-        <activity android:name=".validation">
+        <activity android:name=".Shared_pref"></activity>
+        <activity android:name=".Custom_Grid_view">
+
+        </activity>
+        <activity android:name=".passwordEye">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".validation" />
         <activity android:name=".layout_custom" />
-        <activity android:name=".Custom_adapter"></activity>
+        <activity android:name=".Custom_adapter" />
         <activity android:name=".hw_fragment" />
         <activity android:name=".Dynamic_fragmentt" />
         <activity android:name=".FragmentMian" />
@@ -53,13 +58,7 @@
         <activity android:name=".splash_screen" />
         <activity android:name=".ScrollVieww" />
         <activity android:name=".ToolBarr" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
