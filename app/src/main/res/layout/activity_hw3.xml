@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hw3"
+    android:background="@drawable/uu">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="520dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ok3">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imm"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginTop="20dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <Button
+        android:id="@+id/bu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Upload image from gallery">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/tu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_below="@id/bu"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="Name : -"></TextView>
+
+    <EditText
+        android:id="@+id/edu"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_toEndOf="@id/tu"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ok"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/bu"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:hint="name"></EditText>
+
+    <TextView
+        android:id="@+id/tu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_below="@id/tu"
+
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:text="    ID : -"></TextView>
+
+    <EditText
+        android:id="@+id/edu2"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_toEndOf="@id/tu"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/tu"
+        android:gravity="center"
+        android:background="@drawable/ok"
+
+        android:textColor="@color/black"
+        android:hint="Enter Id"></EditText>
+
+    <CheckBox
+        android:id="@+id/ch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remmber Me"
+        android:textSize="20dp"
+
+        android:layout_below="@id/tu2"
+        android:textColor="@color/red"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        >
+
+    </CheckBox>
+
+    <Button
+        android:id="@+id/bu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/ch1"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"></Button>
+
+    <Button
+        android:id="@+id/bu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retrive"
+
+        android:layout_below="@id/ch1"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="200dp"></Button>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
