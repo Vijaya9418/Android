@@ -3,8 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.class_practicals">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,18 +16,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Class_practicals">
-        <activity android:name=".hw3">
+        <activity android:name=".external2"></activity>
+        <activity android:name=".external_storage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Shared_pref">
+        <activity android:name=".internal_storage" />
+        <activity android:name=".hw3">
 
         </activity>
-        <activity android:name=".Custom_Grid_view"></activity>
-        <activity android:name=".passwordEye"></activity>
+        <activity android:name=".Shared_pref" />
+        <activity android:name=".Custom_Grid_view" />
+        <activity android:name=".passwordEye" />
         <activity android:name=".validation" />
         <activity android:name=".layout_custom" />
         <activity android:name=".Custom_adapter" />
