@@ -74,6 +74,7 @@ public class external_storage extends AppCompatActivity {
                         FileOutputStream fout = new FileOutputStream(f);
                         fout.write(name.getBytes());
                         fout.write(pass.getBytes());
+                        fout.close();
                         Log.i("key",f.getAbsolutePath());
                         Toast.makeText(getApplicationContext(), f.getAbsolutePath(),Toast.LENGTH_LONG).show();
 

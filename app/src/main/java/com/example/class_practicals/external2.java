@@ -10,6 +10,9 @@ import android.widget.TextView;
 
 public class external2 extends AppCompatActivity {
 
+
+
+
     TextView textView1, textView2;
     Button b1;
 
