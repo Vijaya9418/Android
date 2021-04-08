@@ -4,13 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".navigationn">
+    tools:context=".navigationn"
+    android:orientation="vertical">
     
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/tb1">
 
     </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.viewpager.widget.ViewPager>
 
 </LinearLayout>
