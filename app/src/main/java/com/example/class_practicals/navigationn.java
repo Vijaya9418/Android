@@ -19,9 +19,9 @@ public class navigationn extends AppCompatActivity {
         vp1=findViewById(R.id.vp1);
         tb1.setBackgroundColor(getResources().getColor(R.color.whatsapp));
 
-        tb1.addTab(tb1.newTab().setText("CHATS"));
-        tb1.addTab(tb1.newTab().setText("STATUS"));
         tb1.addTab(tb1.newTab().setText("CALLS"));
+        tb1.addTab(tb1.newTab().setText("CHATS"));
+        tb1.addTab(tb1.newTab().setText("SETTINGS"));
         Demo adapt=new Demo(this,getSupportFragmentManager(),tb1.getTabCount());
         vp1.setAdapter(adapt);
 

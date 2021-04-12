@@ -5,10 +5,42 @@
     android:layout_height="match_parent"
     tools:context=".Fragment3">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="hello blank fragment3" />
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Query"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_below="@id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true">
+
+        </Button>
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_below="@id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact us"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true">
+
+        </Button>
+
+    </RelativeLayout>
 
 </FrameLayout>
