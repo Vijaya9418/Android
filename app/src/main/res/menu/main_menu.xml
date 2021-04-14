@@ -5,25 +5,20 @@
     <item
         android:title="settings"
         android:id="@+id/settings"
-
+        android:icon="@drawable/ic_baseline_settings_24"
         ></item>
 
     <item
         android:title="Search"
         android:id="@+id/broadcast"
         app:showAsAction="ifRoom"
-android:icon="@drawable/ic_baseline_search_24"
+        android:icon="@drawable/ic_baseline_search_24"
         ></item>
 
-    <item
-        android:title="web"
-        android:id="@+id/web"
-
-        ></item>
 
     <item
         android:title="logout"
         android:id="@+id/logout"
-
+android:icon="@drawable/ic_baseline_keyboard_return_24"
         ></item>
 </menu>

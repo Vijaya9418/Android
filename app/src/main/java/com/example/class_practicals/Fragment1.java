@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -35,6 +36,16 @@ public class Fragment1 extends Fragment {
 
         ArrayAdapter ar=new ArrayAdapter(getContext(),android.R.layout.simple_list_item_1,al);
         lv1.setAdapter(ar);
+
+        lv1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (!al.isEmpty()) {
+                    al.remove(position);
+//                    aa.notifyDataSetChanged();
+                }
+            }
+        });
 
 
         return v;
