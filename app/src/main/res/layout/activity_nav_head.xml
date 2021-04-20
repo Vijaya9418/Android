@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".nav_head">
+    tools:context=".nav_head"
+  >
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_launcher_background">
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/im1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/teal_700"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:src="@drawable/ic_launcher_foreground">
 
 
-        </ImageView>
+        </de.hdodenhof.circleimageview.CircleImageView>
         <TextView
             android:id="@+id/t"
             android:layout_below="@id/im1"
@@ -45,4 +48,14 @@
 
     </RelativeLayout>
 
-</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:id="@+id/b11"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="50dp">
+
+    </Button>
+
+</RelativeLayout>

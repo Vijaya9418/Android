@@ -3,12 +3,21 @@ package com.example.class_practicals;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.Manifest;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -16,17 +25,30 @@ public class Navigation_drawer extends AppCompatActivity {
     DrawerLayout dl1;
     ActionBarDrawerToggle ab;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
         dl1 = findViewById(R.id.dl1);
+
+
+
+
         ab = new ActionBarDrawerToggle(this, dl1, R.string.open, R.string.close);
         ab.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         dl1.addDrawerListener(ab);
         logic();
+
+
     }
+
+
+
+
+
+
 
     void logic() {
 
